@@ -12,7 +12,7 @@ The first guest is the username.The second guest is the password. localhost refe
 ## Simulation Slow Subscriber ##
 ![RabbitMQ Dashboard](images/image4.png)
 
-the total number is around 16. It's because the publisher is sending messages at a faster
+the total number is around 11-12. It's because the publisher is sending messages at a faster
 rate than what the subscriber can take in. which causes the messages to pile up in the queue.
 
 ## Reflection and Running at least three subscriber ##
