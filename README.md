@@ -8,3 +8,10 @@ It is an open standard protocol for message-oriented middleware. AMQP allows app
 ## What does this mean: guest:guest@localhost:5672? ##
 The first guest is the username.The second guest is the password. localhost refers to your local machine. 
 5672 is the default port that RabbitMQ uses for AMQP connections.
+
+## Simulation Slow Subscriber ##
+![RabbitMQ Dashboard](images/image4.png)
+
+the total number is around 16. It's because the publisher is sending messages at a faster
+rate than what the subscriber can take in. which causes the messages to pile up in the queue.
+
