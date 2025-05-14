@@ -15,3 +15,9 @@ The first guest is the username.The second guest is the password. localhost refe
 the total number is around 16. It's because the publisher is sending messages at a faster
 rate than what the subscriber can take in. which causes the messages to pile up in the queue.
 
+## Reflection and Running at least three subscriber ##
+![RabbitMQ Dashboard](images/image5.png)
+The queue now only has 5 messages before emptying out immediately. The backlog cleared really fast because
+the publisher pushed multiple messages all at once and I used three subscribers that processes them concurrently. This shows that
+increasing amount of consumers will prevent queue buildup if the publisher is operating quickly
+
